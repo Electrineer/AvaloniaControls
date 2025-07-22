@@ -1,0 +1,45 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Design.PreviewWith>
+        <StackPanel Orientation="Vertical"
+                    Spacing="10">
+            <TextBlock  Classes="h1"
+                        Text="This is a header 1 title"/>
+            <TextBlock Classes="h2"
+                       Text="This is a header 2 title"/>
+            <TextBlock Classes="h3"
+                       Text="This is a header 3 title"/>
+            <TextBlock Classes="h4"
+                       Text="This is a header 4 title"/>
+        </StackPanel>
+    </Design.PreviewWith>
+    
+    <Style Selector="TextBlock.h1">
+        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="FontFamily" Value="NotoSans"/>
+        <Setter Property="Margin" Value="10 5"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    
+    <Style Selector="TextBlock.h2">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontFamily" Value="NotoSans"/>
+        <Setter Property="Margin" Value="10 5"/>
+        <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+    
+    <Style Selector="TextBlock.h3">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="NotoSans"/>
+        <Setter Property="Margin" Value="10 5"/>
+    </Style>
+    
+    <Style Selector="TextBlock.h4">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontFamily" Value="NotoSans"/>
+        <Setter Property="Margin" Value="10 5"/>
+    </Style>
+</Styles>
+
+
+

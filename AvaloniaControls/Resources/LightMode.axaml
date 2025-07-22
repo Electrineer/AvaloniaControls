@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <!--https://colorhunt.co/palette/8f87f1c68efde9a5f1fed2e2 -->
+    
+        <!-- Normal State Colors -->
+        <Color x:Key="DarkPurpleColor">#8A5CF6</Color>
+        <Color x:Key="MediumPurpleColor">#B794F6</Color>
+        <Color x:Key="LightPurpleColor">#D6BCFA</Color>
+
+        <!-- Hover State Colors (Lighter) -->
+        <Color x:Key="DarkPurpleColorLight">#A78BFA</Color>
+        <Color x:Key="MediumPurpleColorLight">#C4B5FD</Color>
+        <Color x:Key="LightPurpleColorLight">#E0E7FF</Color>
+
+        <!-- Pressed State Colors (Darker) -->
+        <Color x:Key="DarkPurpleColorDark">#6B46C1</Color>
+        <Color x:Key="MediumPurpleColorDark">#8B5CF6</Color>
+        <Color x:Key="LightPurpleColorDark">#A78BFA</Color>
+    
+        <!-- Gradient Brushes -->
+        <LinearGradientBrush x:Key="PurpleGradientDiagonal" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStop Color="{StaticResource DarkPurpleColor}" Offset="0.5"/>
+            <GradientStop Color="{StaticResource MediumPurpleColor}" Offset="0.9"/>
+            <GradientStop Color="{StaticResource LightPurpleColor}" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PurpleGradientDiagonalLight" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStop Color="{StaticResource DarkPurpleColorLight}" Offset="0.5"/>
+            <GradientStop Color="{StaticResource MediumPurpleColorLight}" Offset="0.9"/>
+            <GradientStop Color="{StaticResource LightPurpleColorLight}" Offset="1.0"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="PurpleGradientDiagonalDark" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStop Color="{StaticResource DarkPurpleColorDark}" Offset="0.5"/>
+            <GradientStop Color="{StaticResource MediumPurpleColorDark}" Offset="0.9"/>
+            <GradientStop Color="{StaticResource LightPurpleColorDark}" Offset="1.0"/>
+        </LinearGradientBrush>
+        
+    <BoxShadows x:Key="IconBoxShadow">1 1 4 #40000000</BoxShadows>
+    <FontFamily x:Key="NotoSans">avares://AvaloniaControls/Assets/Fonts/NotoSans-Regular.ttf#Noto Sans</FontFamily>
+    
+    
+</ResourceDictionary>

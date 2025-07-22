@@ -1,0 +1,51 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+   <Design.PreviewWith>
+       <Button Content="Run Test"
+               Classes="default">
+       </Button>
+   </Design.PreviewWith>
+
+   <Style Selector="Button.default">
+    <Setter Property="FontFamily" Value="{StaticResource NotoSans}"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="FontSize" Value="16"/>
+    <Setter Property="CornerRadius" Value="10"/>
+    <Setter Property="Template">
+        <ControlTemplate>
+            <Border BoxShadow="{StaticResource IconBoxShadow}"
+                    CornerRadius="{TemplateBinding CornerRadius}"
+                    Margin="5"
+                    RenderTransform="{TemplateBinding RenderTransform}">
+                <Border Background="{TemplateBinding Background}"
+                        CornerRadius="{TemplateBinding CornerRadius}"
+                        Padding="{TemplateBinding Padding}">
+                    <ContentPresenter Content="{TemplateBinding Content}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      FontFamily="{TemplateBinding FontFamily}"
+                                      FontSize="{TemplateBinding FontSize}"/>
+                </Border>
+            </Border>
+        </ControlTemplate>
+    </Setter>
+    <Setter Property="Transitions">
+        <Transitions>
+            <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.1"/>
+            <BrushTransition Property="Background" Duration="0:0:0.05"/>
+        </Transitions>
+    </Setter>
+    <Setter Property="RenderTransform" Value="translateY(0px)"/>
+    <Setter Property="Background" Value="{StaticResource PurpleGradientDiagonal}"/>
+</Style>
+<Style Selector="Button.default:pointerover">
+    <Setter Property="Background" Value="{StaticResource PurpleGradientDiagonalLight}"/>
+    <Setter Property="RenderTransform" Value="translateY(-0.6px)"/>
+</Style>
+<Style Selector="Button.default:pressed">
+    <Setter Property="Background" Value="{StaticResource PurpleGradientDiagonalDark}"/>
+</Style>
+   
+</Styles>
